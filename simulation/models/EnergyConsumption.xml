@@ -318,11 +318,11 @@ double getTimeSlotsEnergy(){
     // 14 motes, of which 5 are leaf motes (do not receive packets)
     // of the 9 motes left, 4 of them receive packets from 2 motes
     // =&gt; there are 13 receive windows
-    // return (13 * MAX_SLOTS * receptionTime * receptionCost) / CoulombUnit;
+    return (13 * MAX_SLOTS * receptionTime * receptionCost) / CoulombUnit;
 
     // 5 leaf motes, one gateway
     // but 4 receives 2 times 40 slots from mote 6 and 2
-    return (((MAX_MOTES -5) * MAX_SLOTS) * receptionTime * receptionCost)/CoulombUnit; 
+    // return (((MAX_MOTES -5) * MAX_SLOTS) * receptionTime * receptionCost)/CoulombUnit; 
 }
 
 double getMotesEnergyConsumption(){
